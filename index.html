@@ -5,28 +5,23 @@
 
 	<a-scene>
 	<a-sky color="#090C50" rotation="0 0 0" scale="10 10 10"></a-sky>
-		<a-entity gltf-model="url(interface.gltf)" position="0 0.5 0" rotation="0 0 0" scale="2 2 2"></a-entity>
+	<a-entity gltf-model="url(interface.gltf)" position="0 0.5 0" rotation="0 0 0" scale="2 2 2"></a-entity>
 	
-	
-	<a-entity class="link" link="href:https://faerlou.github.io/VR1/"  gltf-model="url(batton.gltf)" position="3 -0.15 -3" rotation="0 135 0" scale="1.1 1.1 1.1"></a-entity> <!-- 2 -->
-	<a-entity class="link" link="href:https://faerlou.github.io/VR1/"  gltf-model="url(batton.gltf)" position="3 -0.15 3" rotation="0 45 0" scale="1.1 1.1 1.1"></a-entity> <!-- 4 -->
 	<a-entity class="link" link="href:https://faerlou.github.io/VR1/"  gltf-model="url(batton.gltf)" position="0 -0.05 -4" rotation="0 0 0" scale="1.1 1.1 1.1"></a-entity> <!-- 1 -->
-	<a-entity class="link" link="href:https://faerlou.github.io/VR1/"  gltf-model="url(batton.gltf)" position="4 -0.05 0" rotation="0 90 0" scale="1.1 1.1 1.1"></a-entity> <!-- 3 -->
-	<a-entity class="link" link="href:https://faerlou.github.io/VR1/"  gltf-model="url(batton.gltf)" position="-3 -0.15 3" rotation="0 -45 0" scale="1.1 1.1 1.1"></a-entity> <!-- 6 -->
-	<a-entity class="link" link="href:https://faerlou.github.io/VR1/"  gltf-model="url(batton.gltf)" position="-4 -0.05 0" rotation="0 90 0" scale="1.1 1.1 1.1"></a-entity> <!-- 7 -->
+	<a-entity class="link" link="href:https://faerlou.github.io/VR2/"  gltf-model="url(batton.gltf)" position="3 -0.15 -3" rotation="0 135 0" scale="1.1 1.1 1.1"></a-entity> <!-- 2 -->
+	<a-entity class="link" link="href:https://faerlou.github.io/AR5Corners/"  gltf-model="url(batton.gltf)" position="4 -0.05 0" rotation="0 90 0" scale="1.1 1.1 1.1"></a-entity> <!-- 3 -->
+	<a-entity class="link" link="href:"  gltf-model="url(batton.gltf)" position="3 -0.15 3" rotation="0 45 0" scale="1.1 1.1 1.1"></a-entity> <!-- 4 -->
+	<a-entity class="link" link="href:"  gltf-model="url(batton.gltf)" position="0 -0.05 4" rotation="0 0 0" scale="1.1 1.1 1.1"></a-entity> <!-- 5 -->
+	<a-entity class="link" link="href:"  gltf-model="url(batton.gltf)" position="-3 -0.15 3" rotation="0 -45 0" scale="1.1 1.1 1.1"></a-entity> <!-- 6 -->
+	<a-entity class="link" link="href:"  gltf-model="url(batton.gltf)" position="-4 -0.05 0" rotation="0 90 0" scale="1.1 1.1 1.1"></a-entity> <!-- 7 -->
 		
-	<a-entity class="link" link="href:https://faerlou.github.io/VR1/"  gltf-model="url(batton.gltf)" position="0 -0.05 4" rotation="0 0 0" scale="1.1 1.1 1.1"></a-entity> <!-- 5 -->
-   <a-camera>
-    <a-cursor
-      id="cursor"
-      animation__click="property: scale; from: 0.5 0.5 0.5; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
-      animation__clickreset="property: scale; to: 0.5 0.5 0.5; dur: 1; startEvents: animationcomplete__click"
-      animation__fusing="property: scale; from: 1 1 1; to: 0.5 0.5 0.5; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
-  </a-camera>
-     
-      
+     <a-camera>
+      <a-cursor
+        id="cursor"
+        animation__click="property: scale; from: 0.5 0.5 0.5; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
+        animation__clickreset="property: scale; to: 0.5 0.5 0.5; dur: 1; startEvents: animationcomplete__click"
+        animation__fusing="property: scale; from: 1 1 1; to: 0.5 0.5 0.5; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
+     </a-camera>
     </a-scene>
-  
-  
   </body>
 </html>
