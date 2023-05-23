@@ -13,7 +13,19 @@
     };
   </script>
   <style>
-  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+	  
+	  
     .btn-group button {
     margin: 0 auto;
     display: block;
@@ -47,7 +59,9 @@
 		 
 <h1></h1>
 
-<div class="btn-group">
+<div class="container">  
+	<background: #000000 url(bg.jpg) alt="bg" style="width:100%">
+	<div class="btn-group">
   <form action="https://faerlou.github.io/VR1/"><button>Романов-на-Мурмане. НАДЕЖДА</button> mixin="frame"</form>
   <form action="https://faerlou.github.io/Coin/"><button>Северный рубль</button> mixin="frame"</form>
   <form action="https://faerlou.github.io/VR2/" target="_blank"><button>Дома-чемоданы / Декавилька</button> mixin="frame"</form>
@@ -55,15 +69,16 @@
   <form action="" target="_blank"><button> Фидель Кастро / Вокзал (27 апреля 1963г.)</button> mixin="frame"</form>
   <form action="" target="_blank"><button>ТПО-небоскрёб</button> mixin="frame"</form>
   <form action="" target="_blank"><button>Арктика / ул.Ленинградская</button> mixin="frame"</form>
-	
-	<style>
+	</div>
+</div>		
+	<!-- <style>
 body {
 background: #000000 url(bg.jpg); /* Цвет фона и путь к файлу */
 color: #fff; /* Цвет текста */
 }
-</style>
+</style> -->
 
-    </div>
+    
    <!-- <a-scene embedded arjs>
      
       <a-entity camera></a-entity>
