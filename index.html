@@ -1,55 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
-  <!-- we import arjs version without NFT but with marker + location based support -->
-  <!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <script>
-    window.onload = function () {
-      document
-        .querySelector(".say-hi-button")
-        .addEventListener("click", function () {
-        });
-    };
-  </script> -->
-	
-	
+ 	
   <style>
 .container {
     position: relative;
     width: 100%;
-    max-width: 400px;
 }
 
-.container img {
-    width: 100%;
-    height: auto;
-}
+.btn-group button {
+    margin: 0 auto;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #8b95e7;
+    border-radius: 2px;
+    color: white; /* White text */
+    padding: 16px 32px;
+    cursor: pointer;
+    width: 30%; /* Set a width if needed */
 
-.btn {
-    position: absolute;
+    display: block; /* Make the buttons appear below each other */
+    button-align: absolute;
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
 }
 
-.container .btn:hover {
-    background-color: black;
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
 } 
 </style>
 	
 <body>
 <div class="container">
   <img src="bg.jpg" alt="BG" style="width:100%;">
-		<div class="btn">
+		<div class=".btn-group">
   <form action="https://faerlou.github.io/VR1/"><button>Романов-на-Мурмане. НАДЕЖДА</button> </form>
   <form action="https://faerlou.github.io/Coin/"><button>Северный рубль</button> </form>
   <form action="https://faerlou.github.io/VR2/" target="_blank"><button>Дома-чемоданы / Декавилька</button> </form>
