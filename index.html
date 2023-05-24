@@ -14,48 +14,51 @@
 	
 	
   <style>
- .container {
+.container {
     position: relative;
-    text-align: center;
-    color: white;
-}	  
- .btn-group button {
-    margin: 0 auto;
-    display: block;
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid #8b95e7; /* border */
-    border-radius: 2px;
-    color: white; /* White text */
-    padding: 16px 32px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 30%; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
-    button-align: center;
+    width: 100%;
+    max-width: 400px;
 }
 
-  
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+} 
 </style>
 	
-
-
 <body>
-		 
-<h1></h1>
-
-<div class="container">  
-	
-	<img src="bg.jpg" alt="Bg" style="width:100%";>
-	<div class="btn-group">
+<div class="container">
+  <img src="bg.jpg" alt="BG" style="width:100%;">
+		<div class="btn">
   <form action="https://faerlou.github.io/VR1/"><button>Романов-на-Мурмане. НАДЕЖДА</button> </form>
   <form action="https://faerlou.github.io/Coin/"><button>Северный рубль</button> </form>
   <form action="https://faerlou.github.io/VR2/" target="_blank"><button>Дома-чемоданы / Декавилька</button> </form>
   <form action="https://faerlou.github.io/AR5Corners/" target="_blank"><button>Пять углов (25 октября 1938)</button> </form>
-  <form action="" target="_blank"><button> Фидель Кастро / Вокзал (27 апреля 1963г.)</button> </form>
-  <form action="" target="_blank"><button>ТПО-небоскрёб</button> </form>
-  <form action="" target="_blank"><button>Арктика / ул.Ленинградская</button> </form>
+  <form action=""><button> Фидель Кастро / Вокзал (27 апреля 1963г.)</button> </form>
+  <form action=""><button>ТПО-небоскрёб</button> </form>
+  <form action=""><button>Арктика / ул.Ленинградская</button> </form>
+		</div>
 </div>	
-</div>		
-	
-  </body>
+</body>
 	
 </html>
