@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html>
- 	
-  <style>
-.container {
-    position: relative;
-    width: 100%;
+<head>
+
+<style>
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn-group button {
-    margin: 0 auto;
-    display: block;
-    background: rgba(0, 0, 0, 0.5);
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("bg.jpg");
+
+    <!-- min-height: 380px; -->
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 200px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid #8b95e7;
     border-radius: 2px;
     color: white; /* White text */
-    padding: 16px 32px;
+    padding: 16px 20px;
     cursor: pointer;
-    width: 30%; /* Set a width if needed */
-
-    display: block; /* Make the buttons appear below each other */
-    button-align: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0.9;
 }
 
-.btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
+.btn:hover {
+    opacity: 1;
 }
-
-/* Add a background color on hover */
-.btn-group button:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-} 
 </style>
-	
+</head>
 <body>
-<div class="container">
-  <img src="bg.jpg" alt="BG" style="width:100%;">
-		<div class=".btn-group">
-  <form action="https://faerlou.github.io/VR1/"><button>Романов-на-Мурмане. НАДЕЖДА</button> </form>
-  <form action="https://faerlou.github.io/Coin/"><button>Северный рубль</button> </form>
-  <form action="https://faerlou.github.io/VR2/" target="_blank"><button>Дома-чемоданы / Декавилька</button> </form>
-  <form action="https://faerlou.github.io/AR5Corners/" target="_blank"><button>Пять углов (25 октября 1938)</button> </form>
-  <form action=""><button> Фидель Кастро / Вокзал (27 апреля 1963г.)</button> </form>
-  <form action=""><button>ТПО-небоскрёб</button> </form>
-  <form action=""><button>Арктика / ул.Ленинградская</button> </form>
-		</div>
-</div>	
+
+<div class="bg-img">
+  
+    <div class="container">
+    <form action="https://faerlou.github.io/VR1/"><button class="btn">Романов-на-Мурмане. НАДЕЖДА</button></form>.
+    <form action="https://faerlou.github.io/VR2/"><button class="btn">Романов-на-Мурмане. НАДЕЖДА</button></form>.
+    <form action=""><button class="btn">Романов-на-Мурмане. НАДЕЖДА</button></form>.
+    <form action="https://faerlou.github.io/VR4/"><button class="btn">Романов-на-Мурмане. НАДЕЖДА</button></form>.
+    <form action="https://faerlou.github.io/VR5/"><button class="btn">Романов-на-Мурмане. НАДЕЖДА</button></form>.
+    <form action="https://faerlou.github.io/VR6/"><button class="btn">Романов-на-Мурмане. НАДЕЖДА</button></form>.
+    <form action="https://faerlou.github.io/VR7/"><button class="btn">Романов-на-Мурмане. НАДЕЖДА</button></form>.
+    
+    </div>
+</div>
+
 </body>
-	
 </html>
