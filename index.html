@@ -1,105 +1,12 @@
-<!DOCTYPE html>
 <html>
-<head>
-
-<style>
-body, html {
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0; /* Убираем отступы */
-    height: 100%; /* Высота страницы */
-    background: url(images/river.jpg); /* Параметры фона */
-    background-size: cover; /* Фон занимает всю доступную площадь */
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.bg-img {
-    /* The image used */
-    background-image: url("bg.jpg");
-   
-
-    min-height: 1920px;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Add styles to the form container */
-.container {
-    position: absolute;
-    right: 20px;
-    bottom: 200px;
-    margin: 20px;
-    max-width: 1920px;
-    padding: 8px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-/* Set a style for the submit button */
-.btn {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid #8b95e7;
-    border-radius: 2px;
-    color: white; /* White text */
-    padding: 40px 80px;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    font-size: 24px;
-}
-
-.btn:hover {
-    opacity: 1;
-}
-    
-    .text-block {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 34px;
- } 
-    h4 {margin-bottom: -15px; /* Отрицательный отступ между заголовком и текстом */}
-     
-    .text-block2 {
-    position: absolute;
-    left: 20px;
-    bottom: 16px;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 16px;
- }
-    
-</style>
-</head>
-<body>
-
-<div class="bg-img">
-    
-    <div class="text-block"><h4>Мурманск AR</h4><p>Путешествие на машине времени</p> </div> 
-    <div class="text-block2"><h1>2023</h4> </div>
-    
-    <div class="container">
-    <form action="https://faerlou.github.io/VR1/"><button class="btn">01 Романов-на-Мурмане <br> (4 октября 1916 г.)</button></form>.
-    <form action="https://faerlou.github.io/VR2/"><button class="btn">02 Дома-чемоданы <br> Декавилька (4 окт. 1918)</button></form>.
-    <form action="https://faerlou.github.io/VR3/"><button class="btn">03 Пять Углов <br> (7 ноября 1938)</button></form>.
-    <form action="https://faerlou.github.io/VR4/"><button class="btn">04 Фидель Кастро <br> Вокзал (27 апреля 1963 г.)</button></form>.
-    <form action="https://faerlou.github.io/VR5/"><button class="btn">05 Базар <br> (18 декабря 1927 г.)</button></form>.
-    <form action="https://faerlou.github.io/VR6/"><button class="btn">06 “Арктика” <br> ул. Ленинградская (декабрь 1979 г.)</button></form>.
-    <form action="https://faerlou.github.io/VR7/"><button class="btn">07 Кафе «Юность» <br> (декабрь 1979 г.)</button></form>.
-    
-    </div>
-</div>
-
-</body>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a href="https://faerlou.github.io/ARGo/">
+    <a-scene>
+      <a-sky src="doroga.jpg" scale="3 3 3" rotation="0 100 0"></a-sky>
+    </a-scene>
+    </a>
+  </body>
 </html>
