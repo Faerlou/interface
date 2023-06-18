@@ -29,7 +29,15 @@
     
     <a-scene>
       <a-sky src="doroga.jpg" scale="3 3 3" rotation="0 100 0"></a-sky>
+      <a-entity class="link" link="https://faerlou.github.io/ARGo/" gltf-model="url(portal.gltf)" position="2 -0.9 0.1" rotation="90 0 0" scale="1 1 1"></a-entity>
+  <a-camera>
+      <a-cursor
+      id="cursor"
+      animation__click="property: scale; from: 1 1 1; to: 2 2 2; easing: easeInCubic; dur: 150; startEvents: click"
+      animation__clickreset="property: scale; to: 1 1 1; dur: 2; startEvents: animationcomplete__click"
+      animation__fusing="property: scale; from: 2 2 2; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
     </a-scene>
+    
     <div class="container">
     <form action="https://faerlou.github.io/ARGo/"><button class="btn">ВЫХОД</button></form></div>
   </body>
